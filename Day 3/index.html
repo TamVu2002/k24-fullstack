@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: yellow;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .green {
+        background-color: green;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <h1 class="bt1">Bài tập 1:</h1>
+    <div class="bai1" id="bai1">
+        <h2>Câu 1: 3 hình vuông nằm cùng một hàng</h2>
+        <div class="cac-hinh" style="display: flex";>
+            <div class="hinh1" style="background-color: red; width: 300px; height: 300px;"></div>
+            <div class="hinh2" style="background-color: yellow; width: 300px; height: 300px;"></div>
+            <div class="hinh3" style="background-color: green; width: 300px; height: 300px;"></div>
+        </div>
+    </div>
+
+    <div class="bai2" id="bai2">
+        <h2>Câu 2: 3 hình vuông nằm cùng một cột</h2>
+        <div class="cac-hinh">
+            <div class="hinh1" style="background-color: red; width: 300px; height: 300px;"></div>
+            <div class="hinh2" style="background-color: yellow; width: 300px; height: 300px;"></div>
+            <div class="hinh3" style="background-color: green; width: 300px; height: 300px;"></div>
+        </div>
+    </div>
+
+    <h1 class="bt2">Bài tập 2</h1>
+    <div class="container">
+        <h2>Câu 1: hình vuông bé nằm trong hình vuông lớn hơn</h2>
+        <div class="box green">
+            <div class="box yellow">
+                <div class="box red"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
